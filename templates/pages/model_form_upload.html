@@ -1,0 +1,22 @@
+{% extends 'base/index.html' %}
+
+
+{% block side_bar %}	
+	{% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+	{% block navbar %}		
+		{% include  "base/nav_bar.html" %}
+	{% endblock navbar %}
+
+		{% block content %}
+					
+			<form method="post" enctype="multipart/form-data">
+			    {% csrf_token %}
+			    {{ form.as_p }}
+			    <button type="submit">submit</button>
+			</form>
+
+
+		{% endblock %}

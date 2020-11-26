@@ -1,0 +1,18 @@
+{% extends 'base/index.html' %}
+
+
+{% block side_bar %}	
+	{% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+	{% block navbar %}		
+		{% include  "base/nav_bar.html" %}
+	{% endblock navbar %}
+
+		{% block content %}
+
+      {% autoescape off %}{{ data }}{% endautoescape %}
+			
+
+		{% endblock %}

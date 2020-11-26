@@ -1,0 +1,19 @@
+
+{% load static %}
+
+
+
+	 <div class=" border-right" id="sidebar-wrapper">
+	      <div class="sidebar-heading">Data-mining Project </div>
+	      <div class="list-group list-group-flush">
+	      	<a href="{% url 'document' %}" class="list-group-item list-group-item-action ">Load Data</a>
+	      	<a href="{% url 'search_data' %}" class="list-group-item list-group-item-action">Search Data</a>
+	        <a href="{% url 'data' %}" class="list-group-item list-group-item-action ">Matrix of Data</a>
+	        <a href="{% url 'dataCR' %}" class="list-group-item list-group-item-action ">Centering & Reduction</a>
+	        <a href="{% url 'cluster' %}" class="list-group-item list-group-item-action ">Clustering</a>
+	        <a href="{% url 'pca' %}" class="list-group-item list-group-item-action ">ACP</a>
+	        
+
+	      </div>
+	    </div>
+	

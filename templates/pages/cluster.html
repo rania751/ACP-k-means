@@ -1,0 +1,25 @@
+{% extends 'base/index.html' %}
+
+
+{% block side_bar %}	
+	{% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+	{% block navbar %}		
+		{% include  "base/nav_bar.html" %}
+	{% endblock navbar %}
+
+		{% block content %}
+
+				<form action="" method="GET"  >
+                                    
+                        <input class="form-control" id="n_clust" name="n_clust" type="text" placeholder="n_clust"  style="border-radius: 20px;" data-role="tagsinput" >
+
+						<div style="text-align: center"><button class="btn btn-primary" type="submit"  id="snf" style="border-radius: 20px;width: 100px;  ">OK</button></div>
+                        
+      			  </form>       
+				
+				{{centroids}}
+
+		{% endblock %}

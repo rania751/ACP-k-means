@@ -1,0 +1,38 @@
+{% extends 'base/index.html' %}
+
+
+{% block side_bar %}    
+    {% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+{% block navbar %}      
+{% include  "base/nav_bar.html" %}
+{% endblock navbar %}
+
+{% block content %}
+    
+<form action="" method="GET"  >
+                                    
+                        <input class="form-control" id="n_comp" name="n_comp" type="text" placeholder="n_comp"  style="border-radius: 20px;" data-role="tagsinput" >
+                  
+                 
+                        <select class="form-control" id="Document_id" name="Document_id" placeholder="Document" style="border-radius: 20px;">
+                            
+                            <option value="" selected="">Document</option>
+                            {% for option in Document_options %}
+                                <option value="{{option.id}}">{{option.description}}</option>
+                            {% endfor %}
+                        </select>
+                    
+                        <div style="text-align: center"><button class="btn btn-primary" type="submit"  id="snf" style="border-radius: 20px;width: 100px;  ">Rechercher</button></div> 
+                        
+        </form>       
+
+        {% autoescape off %}{{ data }}{% endautoescape %}
+
+{% endblock %}
+
+
+
+

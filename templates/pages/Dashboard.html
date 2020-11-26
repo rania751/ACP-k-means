@@ -1,0 +1,26 @@
+{% extends 'base/index.html'%}
+
+
+{% block side_bar %}	
+	{% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+	{% block navbar %}		
+		{% include  "base/nav_bar.html" %}
+	{% endblock navbar %}
+
+		{% block content %}
+			
+				<div class="container-fluid" style="text-align: center; width: 400px; font-weight:  bold;" >
+				        <h1 class="mt-4" style="text-shadow: 2px 2px #ff0000;" >Our Project</h1>
+				        <p>Dans ce projet, nous apprendrons à effectuer une analyse exploratoire multidimensionnelle. Nous utiliserons des méthodes populaires pour analyser rapidement notre échantillon en réduisant la dimension du nombre d'individus ou de variables.</p>
+<p>Nous aborderons des méthodes emblématiques comme l'Analyse en Composantes Principales ou encore le fameux clustering :</p>
+<p>L'Analyse en Composantes Principales (ACP ou PCA en anglais) permet de dégager rapidement les principales tendances de votre échantillon, en diminuant le nombre de variables nécessaires à la représentation de vos données tout en perdant le moins d'informations possible.</p>
+<p>Nous aborderons également une méthode de clustering la plus populaires : l'algorithme du k-means. Celle-ci permet de regrouper nos individus selon leurs similarités.</p>
+<p>Nous allons utiliser le langage de programmation python afin de programmer les deux méthodes. </p>
+
+				      </div>
+
+		{% endblock %}
+

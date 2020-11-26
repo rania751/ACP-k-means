@@ -1,0 +1,22 @@
+{% extends 'base/index.html' %}
+
+
+{% block side_bar %}	
+	{% include  "base/side_bar.html" %}
+{% endblock side_bar %}
+
+
+	{% block navbar %}		
+		{% include  "base/nav_bar.html" %}
+	{% endblock navbar %}
+
+		{% block content %}
+
+				
+				{{pca}}
+				<a href="{% url 'display_scree_plot' %}" class="list-group-item list-group-item-action bg-light">display_scree_plot</a>
+				<a href="{% url 'display_circles' %}" class="list-group-item list-group-item-action bg-light">display_circles</a>
+				<a href="{% url 'display_factorial_planes' %}" class="list-group-item list-group-item-action bg-light">display_factorial_planes</a>
+
+
+		{% endblock %}
